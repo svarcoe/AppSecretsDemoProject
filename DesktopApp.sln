@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.25618.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopApp", "DesktopApp\DesktopApp.csproj", "{E2C104E3-DCD3-4F07-814E-636521F37C4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication", "..\WebApplication\WebApplication.csproj", "{7F77D0A1-C222-48B8-8D0C-EAEA3FC1DBEE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication", "WebApplication\WebApplication.csproj", "{7F77D0A1-C222-48B8-8D0C-EAEA3FC1DBEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
