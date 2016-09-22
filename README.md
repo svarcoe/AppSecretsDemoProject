@@ -19,11 +19,11 @@ And the *secrets.config* file looks like this
 </appSettings>
 ```
 
-This is the entire file, it is important that the root element is **** , otherwise you will get a compile or runtime error. Any new keys defined will be added and any existing keys will overwrite the value from the *web.config*. 
+This is the entire file, it is important that the root element is **appSettings**, otherwise you will get a compile or runtime error. Any new keys defined will be added and any existing keys will overwrite the value from the *web.config*. 
 
 Overwriting values in the *web.config* is very useful for local development. Since the *secrets.config* file is never checked in, each developer can keep their own local app settings values without worrying about mistakenly checking them in and overriding the *web.config* default values. No more commenting out values in your *web.config*! 
 
-The same thing works for the** connectionStrings** section, except in this case the entire section is overwritten. In fact, the *web.config *can’t have any elements under it or you will get errors. The *web.config* will look like this
+The same thing works for the *connectionStrings* section, except in this case the entire section is overwritten. In fact, the *web.config* can’t have any elements under it or you will get errors. The *web.config* will look like this
 
 ```
 <connectionStrings configSource="connectionStrings.config">
@@ -39,8 +39,8 @@ And the *connectionStrings.config* will look like this
 </connectionStrings>
 ```
 
-As long as your extra files have the **.config **extension, IIS will never serve them. Also, you should never add these secrets config files to your project to avoid mistakenly deploying them to your servers. Instead, your release process should deploy secrets files separately from code files. 
+As long as your extra files have the **.config** extension, IIS will never serve them. Also, you should never add these secrets config files to your project to avoid mistakenly deploying them to your servers. Instead, your release process should deploy secrets files separately from code files. 
 
-And finally, always add **secrets.config** and **connectionStrings.config **to your *.gitignore* and to get first-time developers setup with secrets, you could include these files somewhere outside of source control, like a file share.
+And finally, always add **secrets.config** and **connectionStrings.config** to your *.gitignore* and to get first-time developers setup with secrets, you could include these files somewhere outside of source control, like a file share.
 
 That’s all! Super easy way to keep all your secrets safe in both desktop and web applications. 
