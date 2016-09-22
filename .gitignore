@@ -252,3 +252,6 @@ ModelManifest.xml
 # FAKE - F# Make
 .fake/
 /DesktopApp/DesktopApp/secrets.config
+/DesktopApp/DesktopApp/connectionstrings.config
+/WebApplication/connectionstrings.config
+/WebApplication/secrets.config

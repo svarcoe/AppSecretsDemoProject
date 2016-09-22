@@ -1,0 +1,21 @@
+﻿@using System.Configuration;
+@{
+    ViewBag.Title = "Home Page";
+}
+<div class="row">
+    <div class="h3">App Settings</div>
+    <ul>
+        @foreach ( string key in ConfigurationManager.AppSettings.AllKeys )
+        {
+            <li><span>@key <b>@ConfigurationManager.AppSettings[key]</b></span></li>
+        }
+    </ul> 
+    <div class="h3">Connection Strings</div>
+    <ul>
+        @foreach ( ConnectionStringSettings cn in ConfigurationManager.ConnectionStrings )
+        {
+            <li><span>@cn.Name <b>@cn.ConnectionString</b></span></li>
+        }
+    </ul>
+ 
+</div>
