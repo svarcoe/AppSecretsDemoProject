@@ -92,6 +92,9 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+    <None Include="connectionstrings.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="secrets.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

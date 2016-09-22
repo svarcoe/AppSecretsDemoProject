@@ -28,6 +28,11 @@ namespace DesktopApp
             {
                 MessageBox.Show($"key={key}, value={ConfigurationManager.AppSettings[key]}");
             }
+
+            foreach ( ConnectionStringSettings cs in ConfigurationManager.ConnectionStrings)
+            {
+                MessageBox.Show($"connection string: name={cs.Name}, value={cs.ConnectionString}");
+            }
         }
     }
 }
